@@ -1,0 +1,678 @@
+body{
+    font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    margin: auto;
+    
+}
+
+.head-img{
+    top:1%;
+    left: 1%;
+    width: 10%;
+    position: absolute;
+}
+h1{
+    text-align: center;
+    font-size: 6.9vw;
+    margin: 0 auto;
+}
+h2{
+    margin:10vw 0 10vw;
+    text-align: center;
+    font-size: 6.9vw;
+}
+h3{
+    font-size: 5.9vw;
+    text-align: center;
+    margin: 12vw 0 8vw;
+}
+p{
+    font-size: 4.3vw;
+    line-height: 5.8vw;
+}
+img{
+    vertical-align: bottom;
+}
+#overview{
+    text-align: center;
+}
+.overtext{
+    position: absolute;
+    color: #ffffff;
+    top: 18%;
+    left: 7%;
+    line-height: 10vw;
+}
+.over{
+    margin: 5vw 0 5vw;
+}
+.topimg{
+    width:100%;
+    height:140vw;
+}
+.topimg-pc{
+    display: none;
+}
+#fot{
+    padding:1vw 0 1vw;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 30;
+    background-color: #887E7E;
+    color: #ffffff;
+}
+#szn{
+    text-align: center;
+}
+#szn p{
+margin: 5vw;
+}
+.ot-pc{
+display: none;
+}
+.contents p{
+margin: 8vw 0 14vw;
+}
+.sizen{
+    width: 100%;
+    height: 68vw;
+}
+.lnitiatives{ 
+    width: 80%;
+    height: 47vw;
+}
+.contents{
+    text-align: center;
+}
+.hayama h3{
+    display: none;
+}
+.hayama p{
+    margin: 8vw 0 14vw;
+}
+.clg{
+     width: 80%;
+     height: 47vw;
+}
+.fsg{
+    width: 80%;
+    height: 47vw;
+}
+.sfg{
+    width: 80%;
+    height: 47vw;
+}
+.kkg{
+    width: 80%;
+    height: 47vw;
+}
+.hobby{
+    text-align: center;
+    border-top: solid 3vw #79F870;
+}
+.icon{
+        width:12% ;
+        height: 12%;
+        float: left;
+}
+.icon2{
+    width: 15%;
+    height: 15;
+    float: right;
+}
+.acs{
+    width: 67%;
+    height: 47vw;
+}
+.access{
+    text-align: center;
+}
+.cmp{
+    width: 80%;
+    height: 47vw;
+}
+.contact{
+    text-align: center;
+}
+#philosophy p{
+    font-size: 3vw;
+}
+.eight{
+    font-size: 8vw;
+}
+.root-eight{
+    font-size: 3.5vw;
+}
+.enjoy{
+    grid-area: e;
+}
+.idea{
+    grid-area: i;
+}
+.generate{
+    grid-area: g;
+}
+.history{
+    grid-area: h;
+}
+.try{
+    grid-area: t;
+}
+#philosophy{
+    display: grid;
+    grid-template-areas: "e i g h t"  ;
+    grid-template-columns:20% 20% 20% 20% 20%;
+}
+.rto{
+width:40%;
+}
+#foot-servise{
+    background-color: #F6EFEF;
+    margin: 0 0 3.5vw;
+    position: relative;
+    
+}
+.logo{
+    width: 14%;
+    position: absolute;
+    right: 18vw;
+    bottom:6vw;
+}
+.ctt{
+    position: relative;
+}
+.ctt-rtei{
+z-index: 20;
+background:rgba(255, 255, 255, 0.78);
+position: absolute;
+top: 4%;
+right: 10%;
+}
+.ctt-rtei p{
+    margin:8vw 4vw ;
+}
+.rtei{
+    width: 100%;
+}
+.conpanyname p{
+    margin: 0px;
+}
+.remote{
+    border-top: solid 3vw #78A9FC;
+}
+.btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0 0 10vw;
+    text-decoration: none;
+    background: #FAB245;/*ボタン色*/
+    color: #333;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color:#333 ;
+  }
+  .btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .rtei-pc{
+      display: none;
+  }
+  .br-pc{
+    display: none;
+  }
+  .accordion{
+    margin-top: 10px;
+  }
+  .Ins{
+   width: 80%;
+   height: 47vw;
+  }
+  
+  .accordion__container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .accordion__title {
+    background-color:#C9EBFF;
+    border: 1px solid transparent;
+    font-size: 4.5vw;
+    padding: 2vw;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+  }
+  
+  .accordion__title::before, .accordion__title::after {
+    content: '';
+    display: block;
+    background-color:#707070;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    right: 25px;
+  }
+  
+  .accordion__title::after {
+    transform: rotate(90deg);
+    transition-duration: .3s;
+  }
+  
+  .accordion__title:hover,
+  .accordion__title:active,
+  .accordion__title.is-active { 
+    background-color: #C9EBFF;
+  }
+  
+  .accordion__title.is-active::before {
+    opacity: 0;
+  }
+  
+  .accordion__title.is-active::after {
+    transform: rotate(0);
+  }
+  
+  .accordion__content {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0 1.5em;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: .3s;
+  }
+  
+  .accordion__content.is-open {
+    border: 1px solid #707070;
+    padding: .625em 1.5em;
+    line-height: normal; /*i numberに書き換える*/
+    height: auto;
+    opacity: 1;
+    text-align: left;
+  }
+  .slide img{
+    width:80vw ;
+    height: 47vw;
+  }
+  .haph{
+      display: none;
+  }
+  .hobpc{
+display: none;
+  }
+  .conpanyname p{ 
+  transform: scale(0.9);
+  font-size: 2vw;
+  line-height: 3.2vw;
+  padding: 3vw 5vw;
+}
+.cone{
+    font-size: 4vw;
+}
+.copa{
+    transform: scale(0.75);
+    font-size: 2vw;
+}
+#foot-bottom{
+   padding: 0 5vw 3vw;
+  margin: 0 5vw;
+}
+#foot-bottom p{
+    display: none; 
+}
+
+@media screen and (min-width: 481px) { }
+@media screen and (min-width: 960px) {
+.over{
+    writing-mode:vertical-lr;
+    margin:0 0 10vw ;
+
+}
+.ovtx{
+    writing-mode: vertical-lr;
+    margin: 0 0 2.5vw;
+}
+.ot-pc{
+    display: block;
+    position: absolute;
+    top: 20vw;
+    right:13vw ;
+}
+.ot-pc p{
+font-size: 4vw;
+color: #FFF;
+}
+.ot{
+    display: none;
+    position: absolute;
+    margin: 0;
+}
+.overtext{
+    font-size: 3.9vw;
+    line-height: 6vw;
+    left:9vw;
+
+}
+.topimg{
+        width:100%;
+        height:140vw;
+        display: none;
+    }
+    .topimg-pc{
+        width:100% ;
+        height: 48vw;
+        display: block;
+ } 
+ h1{
+    text-align: center;
+    font-size: 4vw;
+    margin: 0 auto;
+}
+h2{
+    margin:5vw 0 4vw;
+    text-align: center;
+    font-size: 3vw;    
+}
+h3{
+    margin: 6vw 0 3vw;
+    font-size: 2.7vw;
+    text-align: center;
+}
+p{
+    font-size: 1.5vw;
+}
+.hobpc{
+    display: block;
+}
+#hob p{
+    display: block;
+}
+.sizen{
+    width: 48%;
+    height: 28vw;
+}
+.lnitiatives{ 
+    width: 48%;
+    height: 28vw;
+}
+.contents p{
+    margin: 2.5vw 0 3vw;
+    line-height: 2.5vw;
+}
+
+.br-sp{
+    display: none;
+}
+.clg{
+    width: 25%;
+    position: absolute;
+    top: 0;
+}
+.fsg{
+   width: 25%;
+   right: 0;
+   top: 0;
+   position: absolute;
+}
+.sfg{
+    top: 17.4vw;
+   width: 25%;
+   position: absolute;
+}
+.kkg{
+   width: 25%;
+   right: 0;
+   top:17.4vw;
+   position: absolute;
+}
+#hby{
+    display: none;
+}
+#hby p{
+    display: none;
+}
+.acs{
+    width: 40%;
+    height:24vw;
+}
+.cmp{
+    width: 31%;
+    height: 19.5vw;
+}
+.rto{
+    width:15%;
+}
+.rtei{
+    display: none;
+}
+.rtei-pc{
+    display: block;
+    width: 100%;
+    height: 44vw;
+}
+.br-pc{
+    display: block;
+}
+.ctt-rtei{
+    z-index: 20;
+    background:rgba(255, 255, 255, 0.78);
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    }
+ .ctt-rtei p{
+     line-height: 3vw;
+    margin: 3vw 4vw 3vw;
+}
+.btn-square {
+    display: inline-block;
+    padding: 1.5vw 4vw;
+    margin: 0 0 5vw;
+    text-decoration: none;
+    background: #FAB245;/*ボタン色*/
+    color: #333;
+    border-radius: 3px;
+    border:1px solid;
+    border-color:#333 ;
+  }
+  .hayama h3{
+   display: block;
+   float: right;
+   width: 25%;
+   margin: 8vw 11vw 8vw 0;
+  }
+  .hayama{
+      position: relative;
+    text-align: right;
+  }
+  .hayama p{
+      text-align: left;
+      margin: 2vw 0 10vw 16vw;
+      line-height: 2.5vw;
+  }
+  #szn p{
+      margin: 3vw 0 10vw;
+      line-height: 3vw;
+  }
+  .Ins{
+      width: 33vw;
+      height: 22vw;
+      position: absolute;
+      top: 20.5vw;
+      right:13vw;
+ }
+.hobby{
+    position: relative;
+    border-top:solid 2vw #79F870;
+}
+.hobby h2{
+    text-align:left;
+    margin: 3vw 7vw 3vw;
+}
+.hobby p{
+    text-align: left;
+    margin: 0 15vw 5vw;
+}
+.hobby h3{
+    text-align: left;
+    color: #227784;
+    margin: 0 15vw 0;
+    padding: 0 0 2vw;
+}
+.photos img{
+    position: absolute;
+   animation: photo 28s infinite;
+   opacity: 0;
+}
+@keyframes photo{
+    0%{ opacity: 0;}
+    10%{ opacity: 1;}
+    20%{ opacity: 1;}
+    30%{opacity:0;}
+    100%{ opacity: 0;}
+  }
+  .photos img:nth-of-type(1) {
+    animation-delay: 0s;
+}
+.photos img:nth-of-type(2) {
+    animation-delay: 7s;
+}
+.photos img:nth-of-type(3) {
+    animation-delay: 14s;
+}
+.photos img:nth-of-type(4) {
+    animation-delay: 21s;
+}
+.accordion__title {
+    background-color:#C9EBFF;
+    border: 1px solid transparent;
+    font-size: 1vw;
+    padding: 1vw ;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+  }
+  .haph{
+      display: block;
+  }
+  .slide{
+      display: none;
+  }
+  .tickercontainer{
+    display: none;
+  }
+  .hobpc {
+   text-align: left;
+  }
+  .hobpc img{ 
+      position: absolute;
+      right: 7%;;
+      bottom: 13%;
+      width: 44vw;
+      height: 27vw;
+  }
+  #message{
+      margin: 5vw 7vw 3vw;
+      font-size: 1.7vw;
+  }
+  .hobpc input{
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: #227784; ;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    margin: 0 7vw 1.5vw;
+    border-width: 0px;
+    border-style: outset;
+    border-color:#FFF;
+    border-image: initial;
+    top:20vw;
+    font-size: 2.7vw;
+}
+.conpanyname{
+padding: 2vw;
+}
+.conpanyname p{ 
+    transform-origin: left center;
+    padding: 0; 
+    transform: scale(1.0);
+    font-size: 1.5vw;
+}
+.access{
+    line-height: 2.2vw;
+}
+.cone{
+    transform-origin: left center;
+    transform: scale(1.0);
+    font-size: 2.6vw;
+}
+.copa{
+    transform-origin: left center;
+    transform: scale(1.0);
+    font-size: 1.2vw;
+}
+#foot-bottom{
+    padding: 0 0 2vw;
+}
+#foot-bottom p{
+    display: block;
+    font-size: 0.8vw;
+    line-height: 0;
+    margin: 0 9vw;
+}
+.logo{
+    right: 15vw;
+    width: 9%;
+    bottom: 7vw;
+}
+.head-img{
+    top:1%;
+    left: 1%;
+    width: 5vw;
+    position: absolute;
+}.eight{
+    font-size: 5vw;
+}
+.root-eight{
+    font-size: 2vw;
+}
+#philosophy p{
+font-size: 2vw;
+}
+.conpanyname p{
+margin: 0 12vw;
+}
+#foot-servise{
+    margin-bottom: 2.5vw;
+}
+.icon{
+    width:1.5vw ;
+    height: 12%;
+}
+.accordion__title::before, .accordion__title::after {
+    content: '';
+    display: block;
+    background-color:#707070;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    right: 10px;
+  }
+  .remote{
+      border-top: solid 2vw #78A9FC;
+  }
+  
+}
